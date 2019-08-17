@@ -16,4 +16,5 @@ RUN chmod +x /usr/local/bin/wrapdocker
 
 # Define additional metadata for our image.
 VOLUME /var/lib/docker
+USER gitpod
 CMD ["wrapdocker"]
