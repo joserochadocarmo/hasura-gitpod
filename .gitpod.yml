@@ -1,8 +1,2 @@
-image: hasura/graphql-engine:v1.0.0-beta.4
-tasks:
-  - command: >
-      echo HASURA_GRAPHQL_ENABLE_CONSOLE=true >> .env &&
-      echo HASURA_GRAPHQL_DATABASE_URL=postgres://postgres:@postgres:5432/postgres >> .env
-ports:
- - port: 8080
-   onOpen: open-preview
+image:
+  file: .gitpod.dockerfile
